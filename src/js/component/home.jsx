@@ -18,7 +18,7 @@ const Home = () => {
 	const handleTaskToggle = (index) => {
 		const newToDos = [...toDos];
 		if (!newToDos[index].completed) {
-			setCompletedTasks(completedTasks + 1); // Incrementa el contador solo si la tarea no estaba completada antes
+			setCompletedTasks(completedTasks + 1);
 		}
 		newToDos[index].completed = !newToDos[index].completed;
 		setToDos(newToDos);
